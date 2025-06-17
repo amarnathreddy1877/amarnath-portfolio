@@ -1,0 +1,129 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{needspace}
+
+\pagestyle{empty}
+\raggedbottom
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    pdfauthor={Amarnath Reddy Malkireddy},
+    pdftitle={Resume - Amarnath Reddy Malkireddy}
+}
+
+\titleformat{\section}{\bfseries\large\scshape}{}{0em}{}[\vspace{-3pt}\titlerule]
+\titlespacing*{\section}{0pt}{*1.2}{*0.4}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, label=\textbullet, itemsep=2pt, topsep=2pt, partopsep=0pt, parsep=0pt}
+\newcommand{\dateright}[1]{\hfill{\small\textit{#1}}}
+\newcommand{\sectionneed}{\Needspace{3\baselineskip}}
+\newcommand{\afterheader}{\vspace{-6pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries Amarnath Reddy Malkireddy}\\[-2pt]
+    Albany, NY \textbullet{} (838) 200-7053 \textbullet{}
+    \href{mailto:mamarnathreddy49@gmail.com}{amarnathreddymalkireddy@gmail.com} 
+    \href{https://www.linkedin.com/in/amarnath-reddy-malkireddy}{linkedin.com/in/amarnath-reddy-malkireddy}
+\end{center}
+\afterheader
+
+\sectionneed
+\section*{Professional Summary}
+Results-driven Data Analyst with 5 years of progressively responsible experience in transforming complex data into actionable insights across healthcare, government, telecom, and retail sectors. Adept at building scalable ETL pipelines, predictive models, and real-time dashboards using Python, SQL, Tableau, and Power BI. Skilled in leveraging cloud platforms (AWS, GCP), implementing CI/CD workflows, and ensuring compliance with HIPAA, SOX, and FERPA standards. Proven track record of using AI-driven tools like GPT APIs to streamline reporting and accelerate business decisions. Strong collaborator with a passion for data storytelling, automation, and driving data-first strategies.
+
+
+\sectionneed
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Programming:} Python (Pandas, NumPy, Scikit-learn), R, SQL (PostgreSQL, BigQuery, Redshift), Bash.
+    \item \textbf{Cloud Platforms:} AWS (S3, Glue, Lambda, Redshift), GCP (BigQuery, Cloud Functions), Snowflake.
+    \item \textbf{Data Engineering:} ETL/ELT pipelines, dbt, Airflow, REST APIs, data modeling, Data Warehousing.
+    \item \textbf{Visualization:} Tableau, Power BI, Looker, Google Data Studio, Excel (Pivot, Power Query, VBA).
+    \item \textbf{Machine Learning:} Regression, Classification, ARIMA, Clustering, Forecasting, Anomaly Detection.
+    \item \textbf{DevOps \& Automation:} Git, GitHub Actions, Docker (Basics), CI/CD pipelines, Terraform (familiar).
+    \item \textbf{Infrastructure:} Linux, Kubernetes (Basics), Flask APIs.
+    \item \textbf{Governance:} HIPAA, FERPA, SOX/PCI DSS, SLA/QoS, metadata management.
+    \item \textbf{Generative AI:} GPT API for report automation, workflow acceleration, and narrative generation.
+\end{itemize}
+
+\sectionneed
+\section*{Professional Experience}
+
+\noindent\textbf{Bioinformatics Data Analyst} \dateright{May 2024 – Present}\\
+\textit{US Tech Solutions (Client: NYS Dept. of Health), Albany, NY}
+\begin{itemize}
+    \item Developed GCP-based ETL pipelines processing 200K+ monthly EHR records via FHIR APIs, improving data access by 65\%.
+    \item Built 8+ Tableau/Looker dashboards for real-time capacity metrics, cutting manual reporting time by 40\%.
+    \item Automated dbt workflows with testing and lineage tracking, reducing pipeline failures by 30\%.
+    \item Integrated anomaly detection using SQL + Python, reducing critical data errors by 25\%.
+    \item Leveraged GPT APIs to auto-generate narrative reports, accelerating reporting cycles by 25\%.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{Data Analyst Intern} \dateright{May 2022 – Aug 2022}\\
+\textit{University at Albany, Albany, NY}
+\begin{itemize}
+    \item Consolidated academic datasets using Python + Power Query, boosting data reliability by 30\%.
+    \item Built PostgreSQL dashboards for retention analytics; supported targeted outreach efforts across departments.
+    \item Led Tableau/SQL workshops for 15+ internal teams to democratize data access and improve operations.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{Application Development Analyst} \dateright{May 2019 – Dec 2021}\\
+\textit{Accenture, Hyderabad, India}
+\begin{itemize}
+    \item Delivered AWS data pipelines (S3, Glue, Redshift) for telecom client supporting 2M+ records daily.
+    \item Analyzed SLA/QoS metrics to improve operations by 15\% using Python dashboards.
+    \item Built SOX-compliant dashboards and supported fraud detection analysis, reducing risk by 10\%.
+    \item Created churn prediction models (80\% accuracy) that improved customer retention by 20\%.
+    \item Mentored 4 junior analysts and promoted Agile processes using Git and JIRA.
+\end{itemize}
+
+\sectionneed
+\section*{Projects}
+
+\noindent\textbf{Resume \& Application Automation (Personal Project)}\\
+\begin{itemize}
+    \item Built Python CLI using GPT API to generate tailored resumes and cover letters, reducing application time by 60\%.
+    \item Deployed automation via GitHub Actions (CI/CD) to scan jobs and trigger resume tailoring pipelines.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{COVID-19 Hospitalization Forecasting (Capstone Project)}\\
+\begin{itemize}
+    \item Modeled hospitalization demand using ARIMA and XGBoost for pandemic planning.
+    \item Built Tableau dashboards with stakeholder simulation and alerting capability.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{Customer Churn Exploration (Kaggle-style)}\\
+\begin{itemize}
+    \item Created end-to-end pipeline using Snowflake + PostgreSQL; modeled churn with Logistic Regression + XGBoost.
+    \item Deployed scoring API with Flask + AWS Lambda; visualized results in Power BI with executive-ready insights.
+\end{itemize}
+
+\sectionneed
+\section*{Education}
+\textbf{M.S. in Data Science}, University at Albany, SUNY \dateright{Dec 2023}\\
+\textit{Relevant Coursework:} Machine Learning, Data Mining, Statistical Computing, Big Data Analytics
+
+\sectionneed
+\section*{Certifications}
+\begin{itemize}
+    \item Python for Data Science, AI, and Development – IBM
+    \item Data Visualization and Dashboards with Excel and Cognos – IBM
+    \item Introduction to Data Analytics – IBM
+    \item Excel Basics for Data Analysis – IBM
+    \item PCEP – Certified Entry-Level Python Programmer – Python Institute
+    \item AZ-900: Microsoft Azure Fundamentals – Microsoft
+\end{itemize}
+
+\end{document}
