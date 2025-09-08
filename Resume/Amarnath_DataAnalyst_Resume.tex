@@ -1,129 +1,145 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage[margin=0.75in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+\documentclass[9.5pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
-\usepackage{hyperref}
 \usepackage{enumitem}
-\usepackage{needspace}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
 
-\pagestyle{empty}
-\raggedbottom
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
-    pdfauthor={Amarnath Reddy Malkireddy},
-    pdftitle={Resume - Amarnath Reddy Malkireddy}
-}
+\usepackage[hidelinks]{hyperref}
+\linespread{0.97}
+\setlength{\parskip}{0.25em}
 
-\titleformat{\section}{\bfseries\large\scshape}{}{0em}{}[\vspace{-3pt}\titlerule]
-\titlespacing*{\section}{0pt}{*1.2}{*0.4}
-\setlength{\parindent}{0pt}
-\setlist[itemize]{leftmargin=*, label=\textbullet, itemsep=2pt, topsep=2pt, partopsep=0pt, parsep=0pt}
-\newcommand{\dateright}[1]{\hfill{\small\textit{#1}}}
-\newcommand{\sectionneed}{\Needspace{3\baselineskip}}
-\newcommand{\afterheader}{\vspace{-6pt}}
+\pagestyle{fancy}
+\fancyhf{}  % Clear all header/footer content
+\renewcommand{\headrulewidth}{0pt}  % Removes top line from header
+\cfoot{\thepage}
 
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\renewcommand{\familydefault}{\sfdefault}
 \begin{document}
 
+%===== Header =====
 \begin{center}
-    {\LARGE\bfseries Amarnath Reddy Malkireddy}\\[-2pt]
-    Albany, NY \textbullet{} (838) 200-7053 \textbullet{}
-    \href{mailto:mamarnathreddy49@gmail.com}{amarnathreddymalkireddy@gmail.com} 
-    \href{https://www.linkedin.com/in/amarnath-reddy-malkireddy}{linkedin.com/in/amarnath-reddy-malkireddy}
+{\LARGE\textbf{Amarnath Reddy Malkireddy}}\\
+Albany, NY \,\textbar\, Open to Relocation \\
+Phone: +1 (838)200-7053 \,\textbar\, Email: \href{mailto:anrmalkireddy@gmail.com}{anrmalkireddy@gmail.com}\\
+\href{https://www.linkedin.com/in/amarnath-reddy-malkireddy}{LinkedIn/amarnath-reddy-malkireddy} \,\textbar\,
+\href{https://github.com/amarnathreddy1877}{GitHub.com/amarnathreddy1877}
 \end{center}
-\afterheader
+\vspace{0.5em}
 
-\sectionneed
+%===== Summary =====
 \section*{Professional Summary}
-Results-driven Data Analyst with 5 years of progressively responsible experience in transforming complex data into actionable insights across healthcare, government, telecom, and retail sectors. Adept at building scalable ETL pipelines, predictive models, and real-time dashboards using Python, SQL, Tableau, and Power BI. Skilled in leveraging cloud platforms (AWS, GCP), implementing CI/CD workflows, and ensuring compliance with HIPAA, SOX, and FERPA standards. Proven track record of using AI-driven tools like GPT APIs to streamline reporting and accelerate business decisions. Strong collaborator with a passion for data storytelling, automation, and driving data-first strategies.
-
-
-\sectionneed
-\section*{Technical Skills}
-\begin{itemize}
-    \item \textbf{Programming:} Python (Pandas, NumPy, Scikit-learn), R, SQL (PostgreSQL, BigQuery, Redshift), Bash.
-    \item \textbf{Cloud Platforms:} AWS (S3, Glue, Lambda, Redshift), GCP (BigQuery, Cloud Functions), Snowflake.
-    \item \textbf{Data Engineering:} ETL/ELT pipelines, dbt, Airflow, REST APIs, data modeling, Data Warehousing.
-    \item \textbf{Visualization:} Tableau, Power BI, Looker, Google Data Studio, Excel (Pivot, Power Query, VBA).
-    \item \textbf{Machine Learning:} Regression, Classification, ARIMA, Clustering, Forecasting, Anomaly Detection.
-    \item \textbf{DevOps \& Automation:} Git, GitHub Actions, Docker (Basics), CI/CD pipelines, Terraform (familiar).
-    \item \textbf{Infrastructure:} Linux, Kubernetes (Basics), Flask APIs.
-    \item \textbf{Governance:} HIPAA, FERPA, SOX/PCI DSS, SLA/QoS, metadata management.
-    \item \textbf{Generative AI:} GPT API for report automation, workflow acceleration, and narrative generation.
+\begin{itemize}[leftmargin=*]
+  \item Data Analyst with 4+ years in healthcare and financial services, specializing in data integration, dashboard development, and regulatory reporting.
+  \item Advanced in SQL, Python, and SAS with strong BI (Tableau, Power BI) and modern data stack experience (dbt, Snowflake) on GCP and AWS.
+  \item Translate large-scale clinical (EHR, claims) and trading data into actionable insights that improve healthcare access, financial transparency, and operational KPIs.
+  \item Apply AI/ML (risk prediction, cohort modeling, NLP, LLM-based automation) and communicate clearly with cross-functional stakeholders to drive revenue, reduce cost, and elevate customer experience.
 \end{itemize}
 
-\sectionneed
-\section*{Professional Experience}
+%===== Skills =====
+\section*{Skills}
+\textbf{Programming:} Python (Pandas, NumPy), SQL (CTEs, window functions), SAS\\
+\textbf{BI \& Visualization:} Tableau (Row-Level Security), Power BI (DAX, Dataflows), IBM Cognos, Excel (Power Query, PivotTables), matplotlib, seaborn\\
+\textbf{Data Platforms:} Google BigQuery, Amazon Redshift, Snowflake, PostgreSQL, MySQL, SQL Server\\
+\textbf{Cloud \& Tools:} Google Cloud (BigQuery, Cloud Functions, Cloud Scheduler, IAM), AWS (S3, Glue, Redshift, Lambda), Git/GitHub, dbt\\
+\textbf{Analytics \& ML:} Regression, Classification, Clustering, Anomaly Detection, Survival/Time-to-Event, Risk Stratification, Forecasting, Time-Series, A/B Testing, Cohort/Funnel Analysis\\
+\textbf{Security \& Compliance:} HIPAA (PHI handling), GCP IAM, Tableau RLS, CDC/CMS reporting, data governance \& access control\\
+\textbf{Healthcare Domain:} Epic/MyChart (EHR), Immunization Registry, Medicaid claims, HEDIS, SDOH, \textbf{Health Data NY (HDNY)}\\
+\textbf{Banking \& Risk Domain:} Fraud analytics, AML/KYC, Basel III, risk scoring, loan performance analytics\\
+\textbf{Data Quality:} Data cleaning/standardization, reconciliation controls, validation \& QA\\
+\textbf{Soft Skills:} Cross-functional communication, stakeholder engagement, requirements gathering, agile delivery, executive-ready reporting \& training
 
-\noindent\textbf{Bioinformatics Data Analyst} \dateright{May 2024 – Present}\\
-\textit{US Tech Solutions (Client: NYS Dept. of Health), Albany, NY}
-\begin{itemize}
-    \item Developed GCP-based ETL pipelines processing 200K+ monthly EHR records via FHIR APIs, improving data access by 65\%.
-    \item Built 8+ Tableau/Looker dashboards for real-time capacity metrics, cutting manual reporting time by 40\%.
-    \item Automated dbt workflows with testing and lineage tracking, reducing pipeline failures by 30\%.
-    \item Integrated anomaly detection using SQL + Python, reducing critical data errors by 25\%.
-    \item Leveraged GPT APIs to auto-generate narrative reports, accelerating reporting cycles by 25\%.
-\end{itemize}
-
-\vspace{2pt}
-\noindent\textbf{Data Analyst Intern} \dateright{May 2022 – Aug 2022}\\
-\textit{University at Albany, Albany, NY}
-\begin{itemize}
-    \item Consolidated academic datasets using Python + Power Query, boosting data reliability by 30\%.
-    \item Built PostgreSQL dashboards for retention analytics; supported targeted outreach efforts across departments.
-    \item Led Tableau/SQL workshops for 15+ internal teams to democratize data access and improve operations.
-\end{itemize}
-
-\vspace{2pt}
-\noindent\textbf{Application Development Analyst} \dateright{May 2019 – Dec 2021}\\
-\textit{Accenture, Hyderabad, India}
-\begin{itemize}
-    \item Delivered AWS data pipelines (S3, Glue, Redshift) for telecom client supporting 2M+ records daily.
-    \item Analyzed SLA/QoS metrics to improve operations by 15\% using Python dashboards.
-    \item Built SOX-compliant dashboards and supported fraud detection analysis, reducing risk by 10\%.
-    \item Created churn prediction models (80\% accuracy) that improved customer retention by 20\%.
-    \item Mentored 4 junior analysts and promoted Agile processes using Git and JIRA.
-\end{itemize}
-
-\sectionneed
+% --- Projects ---
 \section*{Projects}
 
-\noindent\textbf{Resume \& Application Automation (Personal Project)}\\
-\begin{itemize}
-    \item Built Python CLI using GPT API to generate tailored resumes and cover letters, reducing application time by 60\%.
-    \item Deployed automation via GitHub Actions (CI/CD) to scan jobs and trigger resume tailoring pipelines.
+\textbf{Data Quality Guardian — Row-Level Data Quality Analyzer} \\
+\textit{GitHub:} \url{https://github.com/amarnathreddy1877/data-quality-guardian}
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Summary:} Built an end-to-end \textbf{Streamlit} app that profiles \textbf{CSV} datasets to flag \textbf{missing values}, \textbf{duplicate records}, and \textbf{numeric outliers} via an adaptive \textbf{IQR}/\textbf{Z-score} approach. Generates clear, row-level, \textbf{downloadable reports} to accelerate data triage and fixes.
+  \item \textbf{Responsibilities:} Designed and implemented the \textbf{data-quality engine} (missing/duplicates/adaptive outliers) and an \textbf{interactive UI} with filtered issue views and \textbf{CSV}/\textbf{text} exports; authored concise \textbf{documentation} and \textbf{sample datasets} for review.
+  \item \textbf{Tools:} Python (Pandas, NumPy), Streamlit, Git, GitHub
 \end{itemize}
 
-\vspace{2pt}
-\noindent\textbf{COVID-19 Hospitalization Forecasting (Capstone Project)}\\
-\begin{itemize}
-    \item Modeled hospitalization demand using ARIMA and XGBoost for pandemic planning.
-    \item Built Tableau dashboards with stakeholder simulation and alerting capability.
+\textbf{Job Alerts — Entry/Mid Data Analyst (US)} \\
+\textit{GitHub:} \url{https://github.com/amarnathreddy1877/job-alert-bot.git}
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Summary:} Automated \textbf{hourly email digest} of new \textbf{U.S. data-analyst} roles using official \textbf{ATS JSON APIs}; \textbf{filtered}, \textbf{deduplicated}, and delivered via \textbf{SendGrid}; orchestrated on \textbf{GitHub Actions}.
+  \item \textbf{Responsibilities:} Implemented \textbf{ATS ingestion}, \textbf{keyword filters}, \textbf{U.S./Remote-US location rules}, and a \textbf{30-day de-dup cache}; produced \textbf{grouped HTML emails} and scheduled hourly runs with \textbf{GitHub Actions}; documented setup (\textbf{API keys}/\textbf{secrets}) and troubleshooting steps (e.g., \textbf{SendGrid 401}).
+  \item \textbf{Tools:} Python, REST/JSON, GitHub Actions, SendGrid, ATS APIs
 \end{itemize}
 
-\vspace{2pt}
-\noindent\textbf{Customer Churn Exploration (Kaggle-style)}\\
-\begin{itemize}
-    \item Created end-to-end pipeline using Snowflake + PostgreSQL; modeled churn with Logistic Regression + XGBoost.
-    \item Deployed scoring API with Flask + AWS Lambda; visualized results in Power BI with executive-ready insights.
+
+%===== Professional Experience  =====
+\section*{Professional Experience}
+
+% =========================
+% EXPERIENCE — NYSDOH (OALTC)
+% =========================
+\textbf{Bioinformatics Data Analyst} \hfill May 2024 -- Present\\
+\textbf{New York State Department of Health (Employer: US Tech Solution LLC)} \hfill Albany, NY
+
+Deliver analytics for long-term care across data engineering, intake, analysis, data architecture, BI, and decision support. Build \textbf{Tableau} reporting for surveillance, vaccine uptake, \textbf{HEDIS}/quality, and \textbf{SDOH}; automate \textbf{Python/SQL/BigQuery} pipelines integrating \textbf{EHR (Epic)}, immunization registry, \textbf{Medicaid claims}, and lab data; implement \textbf{HIPAA}-aligned controls (\textbf{PHI}, \textbf{GCP IAM}, \textbf{Tableau RLS}) and support \textbf{CDC/CMS/HDNY} reporting.
+
+\begin{itemize}\setlength\itemsep{0.25em}
+  \item Build and maintain \textbf{15+ Tableau dashboards} (surveillance, quality, \textbf{SDOH}), improving stakeholder decision speed by \textbf{60\%}.
+  \item Automate \textbf{12 ETL workflows} and \textbf{10+ Cloud Scheduler} pipelines; publish \textbf{25+ SQL views} for near-real-time monitoring, reducing manual refresh work by \textbf{70\%}.
+  \item Standardize \textbf{CMS} submissions and \textbf{Health Data NY (HDNY)} extracts (schemas, data dictionaries), cutting submission prep time by \textbf{75\%} and resubmission fixes by \textbf{40\%}.
+  \item Link \textbf{nursing home cost reports} to \textbf{staffing}, \textbf{quality}, and \textbf{utilization} metrics; deliver monthly variance views that cut reconciliation time by \textbf{40\%}.
+  \item Operationalize \textbf{nurse staffing shortage determination} measures (\textbf{HPPD}, vacancy, overtime\%, turnover); automate monthly facility flagging, reducing manual review time by \textbf{60\%}.
+  \item Apply \textbf{SQL window functions} and \textbf{time-to-event} logic for patient-level trends; accelerate outbreak/case response reporting for LTC partners.
+  \item Model \textbf{1M+ records} (\textbf{R}, \textbf{SAS}, \textbf{scikit-learn}); regression across \textbf{750K+ Epic/MyChart} patients and \textbf{clustering/risk stratification} improved preventive-care outreach by \textbf{33\%}.
+  \item Enable secure analytics for \textbf{500+ users} with \textbf{HIPAA}-first access (\textbf{GCP IAM}, \textbf{Tableau RLS}); introduce \textbf{LLM-based report templating} to cut analyst write-up time by \textbf{50\%}.
 \end{itemize}
 
-\sectionneed
+% =========================
+% EXPERIENCE — UNIVERSITY AT ALBANY (PART-TIME)
+% =========================
+\textbf{Data Analyst (Graduate Assistant)} \hfill May 2022 -- August 2022\\
+\textbf{University at Albany} \hfill Albany, NY
+
+Supported institutional research with data prep, analysis, and self-serve reporting.
+
+\begin{itemize}\setlength\itemsep{0.25em}
+  \item Built \textbf{5} \textbf{Excel/Power Query} dashboards for enrollment and budgeting across \textbf{3} departments, improving planning visibility.
+  \item Cleaned and standardized \textbf{100K+} SIS records using \textbf{Python/SQL}, improving data quality by \textbf{25\%}.
+  \item Migrated \textbf{15} legacy Excel reports to \textbf{IBM Cognos} with dynamic filters, reducing report delivery time by \textbf{40\%}.
+\end{itemize}
+
+% =========================
+% EXPERIENCE — ACCENTURE
+% =========================
+\textbf{Application Development Analyst} \hfill May 2019 -- December 2021\\
+\textbf{Accenture} \hfill Hyderabad, India
+
+Supported a retail/consumer banking client across \textbf{fraud analytics}, \textbf{AML/KYC} monitoring, and regulatory reporting; engineered high-volume \textbf{SQL/ETL} on \textbf{AWS Redshift/Glue} and \textbf{Snowflake}; and built \textbf{Power BI}/\textbf{Tableau} reporting for fraud trends, risk scoring, loan performance, and compliance KPIs (Stack: \textbf{SQL}, \textbf{Python}/scikit-learn, \textbf{Power BI/DAX}, \textbf{Tableau}, \textbf{AWS Redshift/Glue}, \textbf{Snowflake}, \textbf{dbt}).
+
+\begin{itemize}\setlength\itemsep{0.25em}
+  \item Built and optimized \textbf{ETL pipelines} on \textbf{Redshift/Glue} and \textbf{Snowflake} processing millions of transactions/day, cutting reporting latency by \textbf{80\%} via \textbf{SQL tuning} and optimized scheduling.
+  \item Deployed \textbf{anomaly detection} and \textbf{clustering} on transaction/account data to flag high-risk activity, improving detection accuracy and reducing false positives for investigators.
+  \item Implemented \textbf{reconciliation controls} and \textbf{data-quality checks} achieving \textbf{99.9\%} transaction-validation accuracy, safeguarding \textbf{\$20M+} in daily consumer banking activity.
+  \item Automated \textbf{regulatory} and \textbf{reconciliation} reporting in \textbf{Power BI/Tableau}, saving \textbf{15+ analyst hours/month} and strengthening \textbf{AML/KYC} and \textbf{Basel III} audit readiness.
+  \item Resolved cross-system inconsistencies with rule-based validation in \textbf{SQL}/\textbf{AWS ETL}, reducing reconciliation errors by \textbf{22\%} and improving downstream \textbf{risk reporting}.
+  \item Partnered with \textbf{fraud}, \textbf{risk}, and \textbf{compliance} teams to tune thresholds and KPIs; enabled \textbf{same-day triage} via dashboards with clear alert rationales.
+\end{itemize}
+
+
+%===== Education =====
 \section*{Education}
-\textbf{M.S. in Data Science}, University at Albany, SUNY \dateright{Dec 2023}\\
-\textit{Relevant Coursework:} Machine Learning, Data Mining, Statistical Computing, Big Data Analytics
+\textbf{M.S. in Data Science}, University at Albany, SUNY \hfill {Jan 2022 -- Dec 2023} \\
+\textbf{B.Tech in Electronics \& Communication}, GITAM University, India \hfill {Jun 2015 -- Apr 2019}
 
-\sectionneed
+%===== Certifications =====
 \section*{Certifications}
-\begin{itemize}
-    \item Python for Data Science, AI, and Development – IBM
-    \item Data Visualization and Dashboards with Excel and Cognos – IBM
-    \item Introduction to Data Analytics – IBM
-    \item Excel Basics for Data Analysis – IBM
-    \item PCEP – Certified Entry-Level Python Programmer – Python Institute
-    \item AZ-900: Microsoft Azure Fundamentals – Microsoft
+\begin{itemize}[leftmargin=*]
+  \item Python for Data Science, AI \& Development -- IBM
+  \item Data Visualization with Excel and Cognos -- IBM
+  \item Microsoft AZ-900: Azure Fundamentals
 \end{itemize}
 
 \end{document}
